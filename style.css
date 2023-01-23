@@ -1,0 +1,61 @@
+
+
+
+body{
+    background-image: url(/img/fondo.jpg);
+}
+
+
+
+#contenedorProductos, .flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.flex p {
+    margin: 0 3px;
+}
+
+.pelicula{
+    width: 200px;
+    height: 310px;
+    border: 2px solid firebrick;
+    margin-right: 2px;
+    background-color:blanchedalmond;
+    
+    
+}
+
+.pelicula img {
+    width: 100%;
+    height: 190px;
+}
+
+
+#titulo{
+    text-align: center;
+    color: brown;
+}
+.pelicula button{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#contenedorCarrito{
+    margin-top: 10px;
+    width: 900px;
+    min-height: 200px;
+    border: 2px solid firebrick;
+}
+
+#contenedorCarrito p{
+    color: white;
+}
+
+#contenedorCarrito h3{
+    color: white;
+    text-align: center;
+}
+
