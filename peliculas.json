@@ -1,0 +1,11 @@
+[
+    {"id": 1, "nombre": "Stranger things", "precio": 10, "stock": 20, "imgUrl":"./img/stranger-things.jpg"},
+    {"id": 2, "nombre": "Greys Anatomy", "precio": 15, "stock": 8, "imgUrl":"./img/greys-anatomy.jpg"},
+    {"id": 3, "nombre": "Dragon ball Z", "precio": 20, "stock": 22, "imgUrl":"./img/DBZ.jpg"},
+    {"id": 4, "nombre": "Saw", "precio": 30, "stock": 23, "imgUrl":"./img/saw.jpg"},
+    {"id": 5, "nombre": "Spider-man", "precio": 40, "stock": 24, "imgUrl":"./img/spiderman.jpg"},
+    {"id": 6, "nombre": "Vengadores", "precio": 50, "stock": 64, "imgUrl":"./img/vengadores.jpg"},
+    {"id": 7, "nombre": "Star Wars", "precio": 60, "stock": 25, "imgUrl":"./img/star-wars.jpeg"},
+    {"id": 8, "nombre": "The last of us", "precio": 70, "stock": 15, "imgUrl":"./img/the-las-of-us.jpeg"},
+    {"id": 9, "nombre": "Avatar", "precio": 80, "stock": 35, "imgUrl":"./img/avatar.jpg"}
+]

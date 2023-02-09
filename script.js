@@ -13,9 +13,12 @@ let peliculas = [
 ]
 
 
+fetch("./peliculas.json")
+    .then(response => response.json())
+    .then(peliculas => programa(peliculas))
 
-
-
+    function programa(peliculas) {
+        
 let contenedorCarrito = document.getElementById("contenedorCarrito")
 
 let contenedor = document.getElementById("contenedorProductos")
@@ -68,6 +71,7 @@ function agregarAlCarrito(e) {
     }
     localStorage.setItem("carrito", JSON.stringify(carrito))
     renderizarCarrito(carrito)
+    alertPersonalizado("Producto agregado al carrito", "success", 1000)
 }
 
 function renderizarCarrito(arrayDePeliculas) {
@@ -88,3 +92,22 @@ function renderizarCarrito(arrayDePeliculas) {
     `
 }
 
+let botonComprar = document.getElementById("comprar")
+botonComprar.addEventListener("click", () => {
+    alertPersonalizado("Gracias por su compra", "success", 1000)
+
+    localStorage.removeItem("carrito")
+    carrito=[]
+    renderizarCarrito(carrito)
+})
+
+
+function alertPersonalizado(texto, icono, tiempo) {
+    Swal.fire({
+        text: texto,
+        icon: icono,
+        showConfirmButton: false,
+        timer: tiempo
+    })
+}
+}
